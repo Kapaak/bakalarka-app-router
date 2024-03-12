@@ -4,6 +4,8 @@ import { VerticalStack } from "@/ui/atoms";
 
 import { DeleteButton, EditButton, RouteLabel } from "./components";
 import { TransparentCard } from "@/ui/molecule";
+import { LeafletMap } from "@/components/Map/LeafletMap";
+import { MapContainer } from "@/components/Map";
 
 interface RoutePageScreenProps {
   locationId: string;
@@ -46,6 +48,7 @@ export const RoutePageScreen = ({
       </VerticalStack>
       <div className="relative h-[35rem] lg:h-full lg:flex-1 lg:p-4">
         {/* <MapContainer staticView /> */}
+        <MapContainer staticView={true} />
       </div>
     </TransparentCard>
   );

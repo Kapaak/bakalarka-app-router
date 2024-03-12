@@ -18,7 +18,7 @@ export function DeleteButton({ routeId }: DeleteButtonProps) {
         await redirectToLocation("/locations");
       }}
     >
-      Odstranitxx
+      Odstranit
     </Button>
   );
 }
